@@ -3,7 +3,7 @@ var app = getApp();
 var Grid = require('./grid.js');
 var Tile = require('./tile.js');
 var GameManager = require('./game_manager.js');
-
+var petMap = require('./pet.js');
 var config = {
     data: {
         hidden: false,
@@ -21,6 +21,7 @@ var config = {
 
         this.setData({
             grids: this.GameManager.setup(),
+            petMap:petMap,
             highscore: wx.getStorageSync('highscore') || 0
         });
 

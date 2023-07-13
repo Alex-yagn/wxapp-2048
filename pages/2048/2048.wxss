@@ -303,6 +303,13 @@ hr {
   z-index: 10;
   font-size: 55px;
 }
+.tile .tile-name{
+  position: absolute;
+  right:2px;
+  bottom:2px;
+  font-size: 10px;
+  line-height:10px;
+}
 .tile.tile-2 .tile-inner {
   background: #eee4da;
   box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);

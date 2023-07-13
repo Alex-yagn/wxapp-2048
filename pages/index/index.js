@@ -4,36 +4,41 @@ var app = getApp();
 var config = {
     data: {
         disable: false,
-        gameList: ['2048']
+        gameList: [{
+            name: '宠物大进化',
+            value: '2048'
+        }]
     },
 
-    onLoad: function() {
+    onLoad: function () {
         var that = this
-            //调用应用实例的方法获取全局数据
-        app.getUserInfo(function(userInfo) {
+        //调用应用实例的方法获取全局数据
+        app.getUserInfo(function (userInfo) {
             //更新数据
             that.setData({
                 userInfo: userInfo
             })
         })
     },
-    onReady: function() {
+    onReady: function () {
         // 页面渲染完毕
     },
-    onShow: function() {
+    onShow: function () {
         // 页面展示
     },
-    onHide: function() {
+    onHide: function () {
         // 页面隐藏
     },
-    onUnload: function() {
+    onUnload: function () {
         // 页面关闭
     }
 };
 
 //设置属性名"startName"到相应游戏页面的映射
-config.data.gameList.forEach(function(v) {
-    config['start' + v] = function() {
+config.data.gameList.forEach(function (ele) {
+    console.log(ele)
+    const v = ele.value;
+    config['start' + v] = function () {
 
         config.data.disable = true;
 

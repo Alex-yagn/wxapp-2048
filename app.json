@@ -10,21 +10,21 @@
   },
   "tabBar": {
     "color": "#353535",
-    "selectedColor": "#3cc51f",
+    "selectedColor": "#1296db",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "游戏",
-        "iconPath": "./assets/diamond.png",
-        "selectedIconPath": "./assets/diamond.png"
+        "text": "小游戏",
+        "iconPath": "./assets/game1.png",
+        "selectedIconPath": "./assets/game.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志",
-        "iconPath": "./assets/star.png",
-        "selectedIconPath": "./assets/star.png"
+        "text": "个人中心",
+        "iconPath": "./assets/person1.png",
+        "selectedIconPath": "./assets/person.png"
       }
     ]
   },

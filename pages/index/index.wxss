@@ -6,3 +6,6 @@
 	position:fixed;
 	bottom: 20px;
 }
+.gameMenu{
+	background: cadetblue !important;
+}
